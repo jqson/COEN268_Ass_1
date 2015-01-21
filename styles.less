@@ -1,0 +1,58 @@
+@viewport {
+  width: 400px;
+  height: 700px;
+}
+html * {
+  font-size: 16px;
+  color: #ffffff;
+  /*TODO: delete test font*/
+  font-family: "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #555;
+  &.list{
+    ul {
+      list-style-type: none;
+      li {
+        height: 84px;
+        width: 100%;
+        div {
+          &.city_time {
+            position: absolute;
+            left: 16px;
+            div {
+              &.time {
+                padding-top: 21px;
+                font-size: 15px;
+                line-height: 14px;
+              }
+              &.city {
+                padding-bottom: 19px;
+                font-size: 30px;
+                height: 30px;
+              }
+            }
+          }
+          &.tmp {
+            position: absolute;
+            right: 16px;
+            padding-top: 19px;
+            padding-bottom: 19px;
+            /*TODO: delete test font*/
+            font-family: "HelveticaNeue-UltraLight", "Helvetica Neue", Helvetica, Arial;;
+            font-size: 65px;
+            line-height: 46px;
+          }
+        }
+        &.sanjose {
+          background: -webkit-linear-gradient(#718291, #617588);
+        }
+        &.sydney {
+          background: -webkit-linear-gradient(#0b131e, #232931);
+        }
+      }
+    }
+  }
+}

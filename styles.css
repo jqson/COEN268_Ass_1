@@ -1,61 +1,52 @@
+@viewport {
+  width: 400px;
+  height: 700px;
+}
 html * {
   font-size: 16px;
   color: #ffffff;
+  /*TODO: delete test font*/
   font-family: "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial;
-  line-height: 100%;
+  margin: 0;
+  padding: 0;
 }
-
-body.list {
+body {
   background: #555;
-  margin: 0;
-  height: 100%;
-  width: 100%;
 }
-
-ul {
+body.list ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
-
-li {
-  margin: 0;
-  padding: 0;
+body.list ul li {
   height: 84px;
   width: 100%;
 }
-
-.list_1 {
-  background: -webkit-linear-gradient(#718291, #617588);
+body.list ul li div.city_time {
+  position: absolute;
+  left: 16px;
 }
-
-.list_2 {
-  background: -webkit-linear-gradient(#0b131e, #232931);
-}
-
-.city_time_l {
-  float: left;
-  margin-left: 16px;
-  height: 100%;
-}
-
-.time_l {
+body.list ul li div.city_time div.time {
   padding-top: 21px;
   font-size: 15px;
+  line-height: 14px;
 }
-
-.city_l {
+body.list ul li div.city_time div.city {
   padding-bottom: 19px;
   font-size: 30px;
+  height: 30px;
 }
-
-.tmp_l {
+body.list ul li div.tmp {
   position: absolute;
   right: 16px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-family: "HelveticaNeue-UltraLight", "Helvetica Neue", Helvetica, Arial;   
+  padding-top: 19px;
+  padding-bottom: 19px;
+  /*TODO: delete test font*/
+  font-family: "HelveticaNeue-UltraLight", "Helvetica Neue", Helvetica, Arial;
   font-size: 65px;
-  line-height: 65px;
+  line-height: 46px;
 }
-
+body.list ul li.sanjose {
+  background: -webkit-linear-gradient(#718291, #617588);
+}
+body.list ul li.sydney {
+  background: -webkit-linear-gradient(#0b131e, #232931);
+}
