@@ -1,0 +1,61 @@
+html * {
+  font-size: 16px;
+  color: #ffffff;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial;
+  line-height: 100%;
+}
+
+body.list {
+  background: #555;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  height: 84px;
+  width: 100%;
+}
+
+.list_1 {
+  background: -webkit-linear-gradient(#718291, #617588);
+}
+
+.list_2 {
+  background: -webkit-linear-gradient(#0b131e, #232931);
+}
+
+.city_time_l {
+  float: left;
+  margin-left: 16px;
+  height: 100%;
+}
+
+.time_l {
+  padding-top: 21px;
+  font-size: 15px;
+}
+
+.city_l {
+  padding-bottom: 19px;
+  font-size: 30px;
+}
+
+.tmp_l {
+  position: absolute;
+  right: 16px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: "HelveticaNeue-UltraLight", "Helvetica Neue", Helvetica, Arial;   
+  font-size: 65px;
+  line-height: 65px;
+}
+
