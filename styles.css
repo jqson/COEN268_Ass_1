@@ -168,6 +168,7 @@ body.city div.today p {
 }
 body.city div.detail {
   height: 287px;
+  border-width: 0;
 }
 body.city div.detail table {
   padding-top: 9px;
