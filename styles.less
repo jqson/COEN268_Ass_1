@@ -12,7 +12,7 @@ html * {
 }
 body {
   background: #555;
-  &.list{
+  &.list {
     ul {
       list-style-type: none;
       li {
@@ -24,26 +24,26 @@ body {
             left: 16px;
             div {
               &.time {
-                padding-top: 21px;
                 font-size: 15px;
                 line-height: 14px;
+                padding-top: 21px;
               }
               &.city {
-                padding-bottom: 19px;
                 font-size: 30px;
                 height: 30px;
+                padding-bottom: 19px;
               }
             }
           }
           &.tmp {
             position: absolute;
             right: 16px;
-            padding-top: 19px;
-            padding-bottom: 19px;
             /*TODO: delete test font*/
             font-family: "HelveticaNeue-UltraLight", "Helvetica Neue", Helvetica, Arial;;
             font-size: 65px;
             line-height: 46px;
+            padding-top: 19px;
+            padding-bottom: 19px;
           }
         }
         &.sanjose {
@@ -52,6 +52,171 @@ body {
         &.sydney {
           background: -webkit-linear-gradient(#0b131e, #232931);
         }
+      }
+    }
+  }
+
+  &.city {
+    div {
+      position: relative;
+      border-style: solid;
+      border-width: 0px;
+      border-bottom-width: 1px;
+      table {
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 100%;
+      }
+      tr {
+        border-width: 0;
+      }
+      td {
+        height: 16px;
+        border-width: 0;
+      }
+      &.header {
+        height: 195px;
+        text-align: center;
+        p {
+          &.p1 {
+            font-size: 24px;
+            line-height: 24px;
+            padding-top: 23px;
+          }
+          &.p2 {
+            font-size: 16px;
+            line-height: 16px;
+            padding-top: 9px;
+          }
+          &.p3 {
+            font-size: 80px;
+            line-height: 62px;
+            padding-top: 22px;
+            /*TODO: delete test font*/
+            font-family: "HelveticaNeue-UltraLight", "Helvetica Neue", Helvetica, Arial;;
+          }
+        }
+        table {
+          position: absolute;
+          bottom: 10px;
+        }
+        td {
+          width: 25%;
+          &:first-child  { text-align: left; }
+          &:nth-child(2) { text-align: left; }
+          &:nth-child(3) { text-align: right; }
+          &:last-child { text-align: right; }
+        }
+      }
+      /*TODO: hide scroll*/
+      &.day {
+        height: 93px;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        &:hover {
+          overflow-x: scroll;
+        }
+        table {
+          padding-top: 10px;
+          padding-bottom: 14px;
+        }
+        tr {
+          td {
+            text-align: center;
+            min-width: 49px;
+            font-size: 13px;
+          }
+          &:first-child td {
+            line-height: 10px;
+            height: 10px;
+          }
+          &:nth-child(2) td {
+            line-height: 17px;
+            height: 17px;
+            padding-top: 15px;
+            padding-bottom: 11px;
+          }
+          &:last-child td {
+            line-height: 8px;
+            height: 8px;
+          }
+        }
+      }
+      &.week {
+        height: 228px;
+        table {
+          padding-top: 12px;
+          padding-bottom: 5px;
+        }
+        tr {
+          td {
+            width: 25%;
+            line-height: 17px;
+            height: 17px;
+            padding-bottom: 7px;
+            text-align: right;
+            &:first-child {
+              text-align: left;
+            }
+          }
+        }
+      }
+      &.today {
+        height: 56px;
+        p {
+          position: absolute;
+          left: 10px;
+          right: 10px;
+          top: 12px;
+          bottom: 12px;
+        }
+      }
+      &.detail {
+        height: 287px;
+        table {
+          padding-top: 9px;
+          padding-bottom: 10px;
+        }
+        tr {
+          td {
+            width: 50%;
+            line-height: 16px;
+            height: 16px;
+            &:first-child {
+              text-align: right;
+              padding-right: 5px;
+            }
+            padding-bottom: 5px;
+            &:last-child {
+              text-align: left;
+              padding-left: 5px;
+            }
+          }
+          &:nth-child(even) td {
+            padding-bottom: 22px;
+          }
+        }
+      }
+      &.control {
+        height: 42px;
+      }
+    }
+    &.sanjose {
+      background: -webkit-linear-gradient(#718291, #617588);
+      div {
+        border-color: #b6c0c9;
+      }
+      td.grey {
+        color: #b6c0c9;
+      }
+    }
+    &.sydney {
+      background: -webkit-linear-gradient(#0b131e, #232931);
+      div {
+        border-color: #b6c0c9;
+      }
+      td.grey {
+        color: #8b8f92;
       }
     }
   }
