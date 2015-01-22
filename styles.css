@@ -11,6 +11,7 @@ html * {
   padding: 0;
 }
 body {
+  min-width: 400;
   background: #555;
 }
 body.list ul {
@@ -62,12 +63,12 @@ body.city div table {
   padding-right: 10px;
   width: 100%;
 }
-body.city div tr {
-  border-width: 0;
+body.city div table img {
+  height: 17px;
+  width: 17px;
 }
-body.city div td {
+body.city div table td {
   height: 16px;
-  border-width: 0;
 }
 body.city div.header {
   height: 195px;
@@ -151,7 +152,7 @@ body.city div.week tr td {
   width: 25%;
   line-height: 17px;
   height: 17px;
-  padding-bottom: 7px;
+  padding-bottom: 5px;
   text-align: right;
 }
 body.city div.week tr td:first-child {

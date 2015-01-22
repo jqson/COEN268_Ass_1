@@ -2,6 +2,7 @@
   width: 400px;
   height: 700px;
 }
+
 html * {
   font-size: 16px;
   color: #ffffff;
@@ -10,7 +11,9 @@ html * {
   margin: 0;
   padding: 0;
 }
+
 body {
+  min-width: 400;
   background: #555;
   &.list {
     ul {
@@ -66,13 +69,13 @@ body {
         padding-left: 10px;
         padding-right: 10px;
         width: 100%;
-      }
-      tr {
-        border-width: 0;
-      }
-      td {
-        height: 16px;
-        border-width: 0;
+        img {
+          height: 17px;
+          width: 17px;
+        }
+        td {
+          height: 16px;
+        }
       }
       &.header {
         height: 195px;
@@ -153,7 +156,7 @@ body {
             width: 25%;
             line-height: 17px;
             height: 17px;
-            padding-bottom: 7px;
+            padding-bottom: 5px;
             text-align: right;
             &:first-child {
               text-align: left;
@@ -221,3 +224,5 @@ body {
     }
   }
 }
+
+
