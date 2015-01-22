@@ -5,13 +5,11 @@
 html * {
   font-size: 16px;
   color: #ffffff;
-  /*TODO: delete test font*/
-  font-family: "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial;
+  font-family: "HelveticaNeue-Light", Helvetica, Arial;
   margin: 0;
   padding: 0;
 }
 body {
-  min-width: 400;
   background: #555;
 }
 body a {
@@ -41,8 +39,7 @@ body.list ul li div.city_time div.city {
 body.list ul li div.tmp {
   position: absolute;
   right: 16px;
-  /*TODO: delete test font*/
-  font-family: "HelveticaNeue-UltraLight", "Helvetica Neue", Helvetica, Arial;
+  font-family: "HelveticaNeue-UltraLight", Helvetica, Arial;
   font-size: 65px;
   line-height: 46px;
   padding-top: 19px;
@@ -59,7 +56,6 @@ body.city div {
   border-style: solid;
   border-width: 0px;
   border-bottom-width: 1px;
-  /*TODO: hide scroll*/
 }
 body.city div table {
   padding-left: 10px;
@@ -91,8 +87,7 @@ body.city div.header p.p3 {
   font-size: 80px;
   line-height: 62px;
   padding-top: 22px;
-  /*TODO: delete test font*/
-  font-family: "HelveticaNeue-UltraLight", "Helvetica Neue", Helvetica, Arial;
+  font-family: "HelveticaNeue-UltraLight", Helvetica, Arial;
 }
 body.city div.header table {
   position: absolute;
@@ -125,22 +120,22 @@ body.city div.day table {
   padding-top: 10px;
   padding-bottom: 14px;
 }
-body.city div.day tr td {
+body.city div.day table tr td {
   text-align: center;
   min-width: 49px;
   font-size: 13px;
 }
-body.city div.day tr:first-child td {
+body.city div.day table tr:first-child td {
   line-height: 10px;
   height: 10px;
 }
-body.city div.day tr:nth-child(2) td {
+body.city div.day table tr:nth-child(2) td {
   line-height: 17px;
   height: 17px;
   padding-top: 15px;
   padding-bottom: 11px;
 }
-body.city div.day tr:last-child td {
+body.city div.day table tr:last-child td {
   line-height: 8px;
   height: 8px;
 }
@@ -151,14 +146,14 @@ body.city div.week table {
   padding-top: 12px;
   padding-bottom: 5px;
 }
-body.city div.week tr td {
+body.city div.week table tr td {
   width: 25%;
   line-height: 17px;
   height: 17px;
   padding-bottom: 5px;
   text-align: right;
 }
-body.city div.week tr td:first-child {
+body.city div.week table tr td:first-child {
   text-align: left;
 }
 body.city div.today {
@@ -178,21 +173,21 @@ body.city div.detail table {
   padding-top: 9px;
   padding-bottom: 10px;
 }
-body.city div.detail tr td {
+body.city div.detail table tr td {
   width: 50%;
   line-height: 16px;
   height: 16px;
   padding-bottom: 5px;
 }
-body.city div.detail tr td:first-child {
+body.city div.detail table tr td:first-child {
   text-align: right;
   padding-right: 5px;
 }
-body.city div.detail tr td:last-child {
+body.city div.detail table tr td:last-child {
   text-align: left;
   padding-left: 5px;
 }
-body.city div.detail tr:nth-child(even) td {
+body.city div.detail table tr:nth-child(even) td {
   padding-bottom: 22px;
 }
 body.city div.footer {
@@ -268,7 +263,7 @@ body.city.sanjose footer div:first-child div:nth-child(3) {
 }
 body.city.sydney {
   background: -webkit-linear-gradient(#0b131e, #232931);
-  border-color: #b6c0c9;
+  border-color: #8b8f92;
 }
 body.city.sydney td.grey {
   color: #8b8f92;
