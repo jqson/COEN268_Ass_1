@@ -15,6 +15,9 @@ html * {
 body {
   min-width: 400;
   background: #555;
+  a {
+    text-decoration: none;
+  }
   &.list {
     ul {
       list-style-type: none;
@@ -200,29 +203,87 @@ body {
           }
         }
       }
-      &.control {
+      &.footer {
         height: 42px;
+        border-width: 0;
+      }
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      border-style: solid;
+      border-width: 0px;
+      border-top-width: 1px;
+      height: 42px;
+      width: 100%;
+      opacity: 1;
+      div {
+        border-width: 0;
+        position: relative;
+        &.center {
+          width: 140px;
+          margin-left: auto;
+          margin-right: auto;
+          font-size: 14px;
+          opacity: 0.9;
+          div {
+            position: absolute;
+            top: 11px;
+            margin: 0;
+            &.d1 {
+              right: 129px;
+              width: 11px;
+            }
+            &.d2 {
+              right: 71px;
+              width: 4px;
+            }
+            &.d3 {
+              left: 71px;
+              width: 4px;
+            }
+            &.d4 {
+              left: 129px;
+              width: 11px;
+            }
+          }
+        }
+        &.right {
+          position: absolute;
+          width: 20px;
+          right: 19px;
+          top: 11px;
+        }
       }
     }
     &.sanjose {
       background: -webkit-linear-gradient(#718291, #617588);
-      div {
-        border-color: #b6c0c9;
-      }
+      border-color: #b6c0c9;
       td.grey {
         color: #b6c0c9;
+      }
+      footer {
+        background: #617588;
+        div:first-child {
+          div:first-child { opacity: 0.5; }
+          div:nth-child(3) { opacity: 0.5; }
+        }
       }
     }
     &.sydney {
       background: -webkit-linear-gradient(#0b131e, #232931);
-      div {
-        border-color: #b6c0c9;
-      }
+      border-color: #b6c0c9;
       td.grey {
         color: #8b8f92;
+      }
+      footer {
+        background: #232931;
+        div:first-child {
+          div:nth-child(2) { opacity: 0.5; }
+          div:last-child { opacity: 0.5; }
+        }
       }
     }
   }
 }
-
-
