@@ -5,7 +5,7 @@
 html * {
   font-size: 16px;
   color: #ffffff;
-  font-family: "HelveticaNeue-Light", Helvetica, Arial;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial;
   margin: 0;
   padding: 0;
 }
@@ -39,7 +39,7 @@ body.list ul li div.city_time div.city {
 body.list ul li div.tmp {
   position: absolute;
   right: 16px;
-  font-family: "HelveticaNeue-UltraLight", Helvetica, Arial;
+  font-family: "HelveticaNeue-UltraLight", "Helvetica Neue", Helvetica, Arial;
   font-size: 65px;
   line-height: 46px;
   padding-top: 19px;
@@ -87,7 +87,7 @@ body.city div.header p.p3 {
   font-size: 80px;
   line-height: 62px;
   padding-top: 22px;
-  font-family: "HelveticaNeue-UltraLight", Helvetica, Arial;
+  font-family: "HelveticaNeue-UltraLight", "Helvetica Neue", Helvetica, Arial;
 }
 body.city div.header table {
   position: absolute;
