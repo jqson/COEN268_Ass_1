@@ -231,11 +231,11 @@ body.city footer div.center div.d1 {
 }
 body.city footer div.center div.d2 {
   right: 71px;
-  width: 4px;
+  width: 6px;
 }
 body.city footer div.center div.d3 {
   left: 71px;
-  width: 4px;
+  width: 6px;
 }
 body.city footer div.center div.d4 {
   left: 129px;
@@ -244,8 +244,11 @@ body.city footer div.center div.d4 {
 body.city footer div.right {
   position: absolute;
   width: 20px;
-  right: 19px;
-  top: 11px;
+  right: 12px;
+  top: -4px;
+}
+body.city footer div.right a {
+  font-size: 40px;
 }
 body.city.sanjose {
   background: -webkit-linear-gradient(#718291, #617588);
